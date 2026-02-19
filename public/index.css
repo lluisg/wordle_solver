@@ -1,0 +1,33 @@
+.letter-cell {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  border: 2px solid #d3d6da;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.form-row{
+  /* display: none; */
+  margin-top: 5%;
+}
+
+.seguent-hide{
+  visibility: hidden;
+}
+.seguent-show{
+  visibility: visible;
+}
+
+.d-flex {
+  gap: 8px;
+}

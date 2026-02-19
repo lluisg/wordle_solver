@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wordle Solver</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+
+  </head>
+
+  <body>
+
+    <form>
+      <div class="form-row justify-content-center" id="row1">
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra11">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('11', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('11', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('11', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra12" onkeyup="nextInput('12')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('12', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('12', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('12', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra13" onkeyup="nextInput('13')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('13', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('13', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('13', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra14" onkeyup="nextInput('14')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('14', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('14', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('14', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra15" onkeyup="nextInput('15')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('15', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('15', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('15', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button id="seguent1" type="button" class="btn btn-success" onclick="makeNextSuggerencia(1)">Suggerencia</button>
+        </div>
+      </div>
+
+
+      <div class="form-row justify-content-center my-4" id="row2">
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra21" onkeyup="nextInput('21')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('21', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('21', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('21', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra22" onkeyup="nextInput('22')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('22', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('22', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('22', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra23" onkeyup="nextInput('23')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('23', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('23', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('23', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra24" onkeyup="nextInput('24')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('24', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('24', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('24', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra25" onkeyup="nextInput('25')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('25', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('25', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('25', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button id="seguent2" type="button" class="btn btn-success" onclick="makeNextSuggerencia(2)">Suggerencia</button>
+        </div>
+      </div>
+
+      <div class="form-row justify-content-center my-4" id="row3">
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra31" onkeyup="nextInput('31')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('31', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('31', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('31', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra32" onkeyup="nextInput('32')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('32', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('32', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('32', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra33" onkeyup="nextInput('33')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('33', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('33', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('33', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra34" onkeyup="nextInput('34')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('34', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('34', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('34', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra35" onkeyup="nextInput('35')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('35', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('35', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('35', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button id="seguent3" type="button" class="btn btn-success" onclick="makeNextSuggerencia(3)">Suggerencia</button>
+        </div>
+      </div>
+
+      <div class="form-row justify-content-center my-4" id="row4">
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra41" onkeyup="nextInput('41')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('41', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('41', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('41', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra42" onkeyup="nextInput('42')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('42', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('42', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('42', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra43" onkeyup="nextInput('43')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('43', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('43', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('43', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra44" onkeyup="nextInput('44')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('44', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('44', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('44', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra45" onkeyup="nextInput('45')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('45', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('45', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('45', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button id="seguent4" type="button" class="btn btn-success" onclick="makeNextSuggerencia(4)">Suggerencia</button>
+        </div>
+      </div>
+
+      <div class="form-row justify-content-center my-4" id="row5">
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra51" onkeyup="nextInput('51')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('51', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('51', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('51', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra52" onkeyup="nextInput('52')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('52', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('52', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('52', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra53" onkeyup="nextInput('53')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('53', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('53', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('53', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra54" onkeyup="nextInput('54')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('54', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('54', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('54', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra55" onkeyup="nextInput('55')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('55', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('55', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('55', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button id="seguent5" type="button" class="btn btn-success" onclick="makeNextSuggerencia(5)">Suggerencia</button>
+        </div>
+      </div>
+
+      <div class="form-row justify-content-center my-4" id="row6">
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra61" onkeyup="nextInput('61')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('61', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('61', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('61', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra62" onkeyup="nextInput('62')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('62', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('62', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('62', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra63" onkeyup="nextInput('63')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('63', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('63', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('63', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra64" onkeyup="nextInput('64')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('64', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('64', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('64', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="input-group">
+            <input type="text" class="form-control text-info font-weight-bold text-uppercase" maxlength="1" id="lletra65" onkeyup="nextInput('65')">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="ResultatLletra('65', 'C')">Correcte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('65', 'I')">Incorrecte</a>
+                <a class="dropdown-item" onclick="ResultatLletra('65', 'M')">Moguda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <button id="seguent6" type="button" class="btn btn-success" onclick="makeNextSuggerencia(6)">Solució</button>
+        </div>
+      </div>
+
+
+      <div class="container-fluid align-items-center">
+        <div class="row justify-content-center my-5">
+          <div class="col-2">
+            <p id="intro" class="text-justify text-center align-middle">Paraula suggerida:</p>
+          </div>
+          <div class="col-3">
+            <p id="best_suggerencia" class="text-justify text-center border border-dark rounded font-weight-bold h1">-----</p>
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-info align-middle" id="boto_reestart" onclick="window.location.href='/wordle.html'">Tornar a jugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center my-2">
+        <div class="col-3">
+          <p id="intro_extra" class="text-justify text-center">Altres possibles paraules:</p>
+        </div>
+        <div class="col-5">
+          <p id="other_suggerencia" class="text-justify text-center font-weight-bold">-----, -----, -----, -----</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mx-5 my-3">
+        <p id="loading"class="text-justify text-center bg-warning h3">Rebent la informació... <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+           <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/></svg>
+        </p>
+      </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">getWords5();</script>
+
+  </body>
+</html>

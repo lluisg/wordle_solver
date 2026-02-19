@@ -1,0 +1,7 @@
+.env
+cheatFile*
+DBZIPS
+node_modules
+function*
+futur_*
+paraulogicenv

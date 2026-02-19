@@ -1,0 +1,36 @@
+.form-row{
+  /* display: none; */
+  margin-top: 5%;
+}
+
+#back{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+#loading, #boto_reestart{
+  visibility: hidden;
+}
+#seguent1, #seguent2, #seguent3, #seguent4, #seguent5, #seguent6{
+  visibility: hidden;
+}
+
+#lletra11, #lletra12, #lletra13, #lletra14, #lletra15{
+  caret-color: transparent;
+}
+#lletra21, #lletra22, #lletra23, #lletra24, #lletra25{
+  caret-color: transparent;
+}
+#lletra31, #lletra32, #lletra33, #lletra34, #lletra35{
+  caret-color: transparent;
+}
+#lletra41, #lletra42, #lletra43, #lletra44, #lletra45{
+  caret-color: transparent;
+}
+#lletra51, #lletra52, #lletra53, #lletra54, #lletra55{
+  caret-color: transparent;
+}
+#lletra61, #lletra62, #lletra63, #lletra64, #lletra65{
+  caret-color: transparent;
+}
