@@ -8,7 +8,7 @@ In **February 2026**, it was updated for more efficient processing and an improv
 
 **Wordle** is a popular web-based word game where you try to guess the correct 5-letter word. After each guess, you receive feedback on each letter: whether it is correct, present but in the wrong position, or not in the word at all. This project is a **solver** that helps you efficiently find the solution word.
 
-Try the live version [**here**](https://wordle-solver.onrender.com).
+Try the live version [**here**](https://wordle-solver-630l.onrender.com).
 
 
 ## Table of Contents
