@@ -41,8 +41,6 @@ async function getFuturaX(ind_paraules){
     });
 
     if(paraules_not_in.length > 0){
-      content_database = 'Obtaining possible words'
-      showLoading(content_database);
 
       const data = {paraules_not_in};
       const options = {
@@ -63,8 +61,6 @@ async function getFuturaX(ind_paraules){
       }
 
       console.log('getFuturaX -- Obtained possibilities (DB):', futures_info);
-      hideLoading();
-      // return paraules_resultat
     }
   }catch(err){
     ErrorLoadingInfo()
@@ -73,7 +69,7 @@ async function getFuturaX(ind_paraules){
 
 async function CalculateBestWord(inds_disponibles, paraules_resultat, info_ind2words){
   content_calculate = 'Calculating next word'
-  showLoading(content_calculate, 'red');
+  showLoading(content_calculate, 'yellow');
 
   valors_paraules = await CalculateEntropiaProbabilidad(inds_disponibles, paraules_resultat, info_ind2words)
 
@@ -98,6 +94,7 @@ async function CalculateBestWord(inds_disponibles, paraules_resultat, info_ind2w
   }
 
   best_ind = ordered_inds.slice(0, 1)
+  hideLoading();
   return best_ind
 }
 
